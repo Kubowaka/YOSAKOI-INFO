@@ -32,7 +32,7 @@ $(function () {
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: "40px",
+        centerPadding: "5px",
         slidesToShow: 2
       }
     }]

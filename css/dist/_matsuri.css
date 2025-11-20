@@ -202,6 +202,7 @@ section お祭り
   ------------------------------------------*/
   .Omatsuri {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   .Omatsuri img {
     height: 300px;
@@ -222,6 +223,6 @@ section お祭り
 
   .matsuri-right {
     width: 100%;
-    margin: 10px 50px;
+    margin: 10px 0px;
   }
 }
