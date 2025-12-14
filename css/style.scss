@@ -73,7 +73,7 @@ header {
 
     a {
       text-decoration: none;
-      color: black;
+      color: rgb(0, 0, 0);
     }
   }
 }
@@ -91,7 +91,7 @@ main
   // border: 3px solid blue;
   margin-top: 60px;
   width: 100%;
-  height: 300vh;
+  height: 200vh;
   position: relative;
 }
 
@@ -99,7 +99,7 @@ main
   /*cssで半円を作ったもの*/
   margin-inline: auto;
   /*横幅が飛び出ないように訂正したもの*/
-  max-width: 1200px;
+  max-width: 1000px;
   width: 80vw;
   border-top-left-radius: calc(80vw / 2);
   border-top-right-radius: calc(80vw / 2);
@@ -109,29 +109,17 @@ main
   // height: 600px; /* 円の半径 */
   // border-top-left-radius: 600px; /* 半径の長さ */
   // border-top-right-radius: 600px; /* 半径の長さ */
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.866);
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   text-align: center;
 
-  /*最初につくっていたもの*/
-  // background-color: #ffffff;
-  // width: 60%;
-  // height: 30%;
-  // text-align: center;
-  // align-items: center;
-  // position: absolute;
-  // left: 50%;
-  // bottom: 0;
-  // transform: translateX(-50%);
-  // border-top-left-radius: 300%;
-  // border-top-right-radius: 300%;
-  // padding-top: 300px;
-
   .mainvisual-text {
     margin: 100px auto;
+    max-width: 400px;
+    padding-inline: 20px;
   }
 
   p {
@@ -140,7 +128,7 @@ main
   }
 
   .h2main {
-    margin-block: 40px 80px;
+    margin-block: 10px 80px;
     font-weight: normal;
     font-size: 32px;
   }
@@ -155,7 +143,7 @@ main
 .fade {
   li {
     // border: 1px solid red;
-    height: 300vh;
+    height: 200vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -310,7 +298,7 @@ Choose
   width: 900px;
   height: 900px;
   color: black;
-  background-color: rgba(104, 10, 255, 0.8);
+  background-color: rgba(113, 26, 254, 0.523);
   border-radius: 50%;
   text-align: center;
   position: absolute;
@@ -389,9 +377,9 @@ fotter
 footer {
   background-image: url("../img/backimage.png");
   max-width: 100%;
-  height: 300px;
+  height: 230px;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
 }
 
 .sns {
@@ -418,10 +406,11 @@ footer {
 
   li {
     padding: 20px 5px;
+    color: rgb(255, 255, 255);
   }
 
   a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
 }
@@ -429,7 +418,7 @@ footer {
 .inquiry {
   padding-inline: 20px;
   a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
 }
@@ -450,25 +439,25 @@ iphone&ipad用
     bottom: 0;
     overflow-y: auto;
     z-index: 20;
-    // left: -300px;
     // opacity: -10;
   }
 
   .open .headright {
     z-index: 200;
     display: block;
-    background-image: url(../img/backimage.png);
-    // background-color: rgba(6, 172, 255, 0);
-    // background-blend-mode: lighten;
+    background-color: rgba(150, 175, 223, 0.8);
+    object-fit: contain;
     background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 250px;
+    border-radius: 0 0 10px 10px;
     top: 50px;
-    left: 0;
+    right: 0;
     position: fixed;
     cursor: pointer;
 
     .nav {
+      z-index: 300;
       display: block;
       text-align: center;
       margin-block: 20px;
@@ -477,6 +466,10 @@ iphone&ipad用
 
       li {
         padding-block: 8px;
+
+        a {
+          color: white;
+        }
       }
     }
   }
@@ -546,7 +539,7 @@ iphone&ipad用
     // border-top-right-radius: 300px; /* 半径の長さ */
 
     .mainvisual-text {
-      margin: 50px 40px;
+      margin: 50px auto;
     }
 
     p {
@@ -676,6 +669,20 @@ iphone用
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 @media (max-width: 400px) {
+  #mainvisual {
+    height: 100vh;
+  }
+
+  .fade {
+    li {
+      height: 100vh;
+    }
+  }
+
+  .mainvisual-textbox {
+    max-width: 1000px;
+    width: 95vw;
+  }
   /*----------------choose----------------*/
 
   .tex1 {
